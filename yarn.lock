@@ -5031,6 +5031,11 @@
   "resolved" "https://registry.npmjs.org/pseudomap/-/pseudomap-1.0.2.tgz"
   "version" "1.0.2"
 
+"pubsub-js@^1.9.5":
+  "integrity" "sha512-5MZ0I9i5JWVO7SizvOviKvZU2qaBbl2KQX150FAA+fJBwYpwOUId7aNygURWSdPzlsA/xZ/InUKXqBbzM0czTA=="
+  "resolved" "https://registry.npmmirror.com/pubsub-js/-/pubsub-js-1.9.5.tgz"
+  "version" "1.9.5"
+
 "pump@^3.0.0":
   "integrity" "sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw=="
   "resolved" "https://registry.npmjs.org/pump/-/pump-3.0.2.tgz"
