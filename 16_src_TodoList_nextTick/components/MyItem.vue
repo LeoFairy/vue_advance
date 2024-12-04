@@ -25,12 +25,12 @@
       handleCheck(id){
         // console.log(id);
         //通知app将对应todo对象的done取反
-        this.$bus.emit('checkTodo',id)
+        this.$bus.$emit('checkTodo',id)
       },
       handleDelete(id){
         if(confirm('确定删除吗？')){
           // console.log(id);
-          // this.$bus.emit('deleteTodo',id)
+          // this.$bus.$emit('deleteTodo',id)
           pubsub.publish('deleteTodo',id)
         }
       },
