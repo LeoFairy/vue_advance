@@ -10,11 +10,15 @@
           <router-link class="list-group-item " active-class="active" to="/home/message">Message</router-link>
         </li>
       </ul>
+
+
       <!-- 写的是组件名 ，  include写了谁， 切走的时候 该组件不会销毁 -->
+      <!-- 缓存多个的写法： <keep-alive include="['News','Message']">  -->
       <keep-alive include="News">
         <router-view ></router-view>
       </keep-alive>
-        
+      
+
     </div>
   </div>
     
