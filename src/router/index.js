@@ -29,8 +29,36 @@ export default new VueRouter({
           children: [
             {
               name: "detail123",
-              path: "detail",
+              path: "detail/:id/:title",
               component: Detail,
+              //props的第一种写法 ：值为对象 该对象中的键值对会以props的形式传给Detail组件
+              // props: { a: 1, b: "hello" },
+
+              //props的第二种写法 ：值为布尔值
+              // 为真，把该路由接收到的所有params参数，以props的形式传给Detail组件
+              // props: true,
+
+              //props的第三种写法 ：值为函数
+              props($route) {
+                return {
+                  id: $route.params.id,
+                  title: $route.params.title,
+                };
+              },
+              /* 写法三的解构赋值： */
+              /*  props({ params }) {
+                return {
+                  id: params.id,
+                  title: params.title,
+                };
+              }, */
+              /* 写法三的解构赋值进阶： */
+              /*    props({ params: { id, title } }) {
+                return {
+                  id,
+                  title,
+                };
+              }, */
             },
           ],
         },
